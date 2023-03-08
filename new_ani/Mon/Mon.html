@@ -1,0 +1,51 @@
+<link type="text/css" rel="stylesheet" href="style.css">
+
+<style>
+    img:hover {
+        opacity: 0.7;
+    }
+
+    div.photo {
+        width: 150px;
+        height: 230px;
+        background-color: #e5e5e5;
+        border: 5px solid #e5e5e5;
+        margin: 10px;
+        float: left;
+    }
+
+    img {
+        width: 150px;
+        height: 200px;
+    }
+
+    .target {
+        /* 한 줄 자르기 */
+        display: inline-block;
+        width: 150px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* 여러 줄 자르기 추가 스타일 */
+        white-space: normal;
+        line-height: 1.2;
+        height: 2.4em;
+        text-align: left;
+        word-wrap: break-word;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+</style>
+
+<body bgcolor=white>
+    <center>
+        <div class="photo"><a href='https://sao-alicization.net/' target="_blank"><img src="them.jpg"></a>
+            <span class="target">소드 아트 온라인 앨리시제이션 War of Underworld part 2</span></div>
+        <div class="photo"><a href='https://toaru-project.com/railgun_t/' target="_blank"><img src="djrhkch.jpg"></a>
+            <span>어떤 과학의 초전자포 T</span></div>
+        <div class="photo"><a href='http://shokugekinosoma.com/5thplate/' target="_blank"><img src="tlrrmr.jpg"></a>
+            <span>식극의 소마 다섯 번째 접시</span></div>
+    </center>
+</body>

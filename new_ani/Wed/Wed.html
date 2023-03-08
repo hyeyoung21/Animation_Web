@@ -1,0 +1,53 @@
+<link type="text/css" rel="stylesheet" href="style.css">
+
+<style>
+    div.photo {
+        width: 150px;
+        height: 230px;
+        background-color: #e5e5e5;
+        border: 5px solid #e5e5e5;
+        margin: 10px;
+        float: left;
+    }
+
+    img {
+        width: 150px;
+        height: 200px;
+    }
+
+    img:hover {
+        opacity: 0.7;
+    }
+
+    .target {
+        /* 한 줄 자르기 */
+        display: inline-block;
+        width: 150px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* 여러 줄 자르기 추가 스타일 */
+        white-space: normal;
+        line-height: 1.2;
+        height: 2.4em;
+        text-align: left;
+        word-wrap: break-word;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+</style>
+
+<body bgcolor=white>
+    <center>
+        <div class="photo"><a href='https://www.tbs.co.jp/anime/oregairu//' target="_blank"><img src="durtl.jpg"></a>
+            <span>역시 내 청춘 러브코메디는 잘못됐다.완</span></div>
+        <div class="photo"><a href='http://arte-anime.com/' target="_blank"><img src="dkfmxp.jpg"></a>
+            <span>아르테</span></div>
+        <div class="photo"><a href='http://gleipnir-anime.com/' target="_blank"><img src="rmffpdlvm.jpg"></a>
+            <span>글레이프니르</span></div>
+        <div class="photo"><a href='http://nogunslife.com/' target="_blank"><img src="shrjswm.jpg"></a>
+            <span>노 건즈 라이프 part 2</span></div>
+    </center>
+</body>

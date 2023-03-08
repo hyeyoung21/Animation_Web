@@ -1,0 +1,39 @@
+﻿<html>
+
+<head>
+    <title>메뉴 프레임</title>
+    <script src="test.js"></script>
+</head>
+<link type="text/css" rel="stylesheet" href="style.css">
+
+<style>
+    span.c1 {
+        background: #F2BD0B;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+</style>
+
+<body bgcolor="white" text="#2f7abd">
+    <center>
+
+        <fieldset>
+            <legend>개인정보입력</legend>
+            <form name="frm" action="menu.jsp" method="get" taget="_top">
+                <p>ID : <input type="text" name="id" size="15" required></p>
+                <p>PW : <input type="password" name="PW" size="15" required></p>
+                <input type="button" value="전송" onclick="javascript:if(loginCheck()==true) submit()">
+                <input type="reset" value="재작성">
+            </form>
+        </fieldset>
+        <br />회원이 아니라면<br />
+        <span class="c1"><a class="c1" href="member.html" target="_blank">회원가입하기</a></span><br />
+        를 클릭하세요.
+    </center>
+</body>
+
+</html>

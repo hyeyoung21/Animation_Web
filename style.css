@@ -1,0 +1,34 @@
+    li {
+        list-style: circle;
+        padding-left: 0 px;
+        margin-bottom: 5px;
+    }
+
+
+    h2 {
+        background: #2f7abd;
+        color: white;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    a:visited {
+
+        color: black;
+
+    }
+
+    a:hover {
+
+        color: dodgerblue;
+
+    }
+
+    a.c1 {
+        text-decoration: none;
+        font-size: 15px;
+        color: white;
+    }

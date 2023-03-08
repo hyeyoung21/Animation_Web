@@ -1,0 +1,51 @@
+<link type="text/css" rel="stylesheet" href="style.css">
+
+<style>
+    img:hover {
+        opacity: 0.7;
+    }
+
+    div.photo {
+        width: 150px;
+        height: 230px;
+        background-color: #e5e5e5;
+        border: 5px solid #e5e5e5;
+        margin: 10px;
+        float: left;
+    }
+
+    img {
+        width: 150px;
+        height: 200px;
+    }
+
+    .target {
+        /* 한 줄 자르기 */
+        display: inline-block;
+        width: 150px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* 여러 줄 자르기 추가 스타일 */
+        white-space: normal;
+        line-height: 1.2;
+        height: 2.4em;
+        text-align: left;
+        word-wrap: break-word;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+</style>
+
+<body bgcolor=white>
+    <center>
+        <div class="photo"><a href='http://appareranman.com/' target="_blank"><img src="cjscjd.jpg"></a>
+            <span class="target">천청난만!</span></div>
+        <div class="photo"><a href='https://mon-isha-anime.com/' target="_blank"><img src="ahstmxj.jpg"></a>
+            <span>몬스터 아가씨의 의사 선생님</span></div>
+        <div class="photo"><a href='https://koipro-anime.love/' target="_blank"><img src="fjqvmeb.jpg"></a>
+            <span>러브 앤 프로듀서</span></div>
+    </center>
+</body>

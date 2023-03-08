@@ -1,0 +1,117 @@
+﻿<html>
+
+<head>
+    <title> 권혜영의 홈페이지에 오신걸 환영합니다.</title>
+    <script src="test.js"></script>
+</head>
+
+<body background="images/wall.jpg">
+    <link type="text/css" rel="stylesheet" href="test.css">
+    <center>
+        <style>
+            input:focus {
+                background-color: #FAEA92;
+            }
+            h2{
+                background-color: #FABF0F;
+                color : white;
+            }
+        </style>
+        <br>
+        <h2>회원가입하기</h2>
+        <table class="table" border="1" cellspacing="0" cellpadding="7" lo="white" align="center" background="">
+            <form action="member.jsp" method="get" name="joinForm">
+                <tr>
+                    <td>아이디 *</td>
+                    <td>
+                        <input type="text" name="member_id" id="id">
+                        <input type="button" name="idcheck" onclick="idCheck()" value="중복검사">
+                    </td>
+                </tr>
+                <tr>
+                    <td>비밀번호 *</td>
+                    <td><input type="password" name="member_pw" id="password">
+                        &nbsp;비밀번호 확인 *<input type="password" name="member_pw" id="password_check">
+                    </td>
+                </tr>
+                <tr>
+                    <td>이름 *</td>
+                    <td><input type="text" name="member_name" id="name"></td>
+                </tr>
+                <tr>
+                    <td>성별</td>
+                    <td><input type="radio" name="sex" value="male" checked>남성
+                        <input type="radio" name="sex" value="female">여성</td>
+                </tr>
+                <tr>
+                    <td>전화번호</td>
+                    <td><input type="text" list="area_number" name="phone_number1" size="3" maxlength="3">-
+                        <datalist id="area_number">
+                            <option value="02"></option>
+                            <option value="031"></option>
+                            <option value="051"></option>
+                            <option value="032"></option>
+                            <option value="062"></option>
+                            <option value="042"></option>
+                            <option value="052"></option>
+                            <option value="044"></option>
+                            <option value="033"></option>
+                        </datalist>
+                        <input type="text" name="phone_number2" size="4" maxlength="4">-
+                        <input type="text" name="phone_number3" size="4" maxlength="4">
+                    </td>
+                </tr>
+                <tr>
+                    <td>휴대폰</td>
+                    <td>
+                        <select id="area_number">
+                            <option value="1" selected>010</option>
+                            <option value="2">02</option>
+                            <option value="3">031</option>
+                            <option value="4">051</option>
+                            <option value="5">032</option>
+                            <option value="6">062</option>
+                            <option value="7">042</option>
+                            <option value="8">052</option>
+                            <option value="9">044</option>
+                            <option value="10">033</option>
+                        </select>-
+                        <input type="text" name="phone_number2" size="4" maxlength="4">-
+                        <input type="text" name="phone_number3" size="4" maxlength="4">
+                    </td>
+                </tr>
+                <tr>
+                    <td>주소</td>
+                    <td>
+                        <input type="text" name="address">
+                        <input type="text" name="address">
+                        <input type="button" name="address_search" onclick="alert('도로명 주소찾기')" value="주소찾기">
+                    </td>
+                </tr>
+                <tr>
+                    <td>생년월일</td>
+                    <td>
+                        <input type="number" name="year" min="1900" max="2020" size="2">년
+                        <input type="number" name="month" min="1" max="12" size="2">월
+                        <input type="number" name="date" min="1" max="31" size="2">일<br>
+                        <input type="radio" name="birthday" value="solar" checked>양력
+                        <input type="radio" name="birthday" value="moon">음력
+                    </td>
+                </tr>
+                <tr>
+                    <td>회원 소개</td>
+                    <td><textarea name="member" cols="60" rows="5" placeholder="당신을 소개해 주세요"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="button" value="전송" onclick="javascript:if(joinCheck()==true) submit()">
+                        <input type="reset" value="재작성">
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </center>
+</body>
+
+</html>
